@@ -2,6 +2,7 @@ body{
     font-size: 20px;
 }
 .modal-container{
+    display:none;
     position:fixed;
     top: 0;
     left:0;
@@ -50,4 +51,9 @@ body{
     border: 1px solid rgba(106, 123, 139, 1);
     border-radius:10px;
     background-color: rgba(106, 123, 139, 1);
+}
+
+.modal-btn:hover{
+    cursor: pointer;
+    background-color: rgb(101, 102, 102);
 }
