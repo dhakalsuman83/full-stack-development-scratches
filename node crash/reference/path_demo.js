@@ -14,5 +14,5 @@ console.log(path.extname(__filename));
 console.log(path.parse(__filename));
 
 
-//concadenate path
-console.log(path.join(__dirname, 'test', 'hello.html'))
+//concatenate path :
+console.log(path.join(__dirname, 'test', 'hello.html'));
