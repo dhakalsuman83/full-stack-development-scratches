@@ -28,8 +28,12 @@ myUrl.searchParams.append('abc','123')
 console.log(myUrl.searchParams)
 
 //loop
-myUrl.searchParams.forEach((value,name) => {
-    console.log(`${name}: ${value}`)
+myUrl.searchParams.forEach((value,key) => {
+    console.log(`${key}: ${value}`)
     
 })
+
+console.log(typeof myUrl.searchParams)
+
+console.log(Array.isArray(myUrl.searchParams));
 

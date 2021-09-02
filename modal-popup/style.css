@@ -10,7 +10,7 @@ body{
     height: 100%; 
     background-color: rgba(214, 212, 212, 0.5) ;
     z-index: 1;
-    overflow: auto;
+    overflow: auto; 
 }
 
 .modal-content{
@@ -22,18 +22,18 @@ body{
     padding:4rem 4rem;
 }
 
-.flex{
+.flex-modal{
     display: flex;
 }
 
-.flex-column{
+.flex-modal-column{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
 }
 
-.flex-items2{
+.flex-modal-items2{
     margin:0 auto;
 }
 
