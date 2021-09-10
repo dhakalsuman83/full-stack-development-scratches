@@ -4,8 +4,7 @@ const db = require('../database')
 const bcrypt = require('bcryptjs')
 
 router.get('/', (req, res) => {
-  res.send({
-    title: 'Login page',
+  res.render('./pages/login', {
     message: req.query.message
   })
 })
@@ -27,7 +26,7 @@ router.post('/', (req, res) => {
         if (result) {
           // TODO: edit session and redirect with success message
           req.session.userId = user.id
-          res.send('Successfully logged in!')
+          res.redirect('/')
         } else {
           res.redirect('/login?message=Email%20or%20password%20is%20incorrect.')
         }

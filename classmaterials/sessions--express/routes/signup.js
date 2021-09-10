@@ -4,7 +4,7 @@ const router = express.Router()
 const db = require("../database")
 
 router.get('/', (req, res) => {
-  res.send("Signup page")
+  res.render("./pages/signup")
 })
 
 router.post("/", (req, res) => {
