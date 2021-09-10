@@ -8,7 +8,7 @@ function Book(title, author, year) {
 
 //getting the summary of the book
 Book.prototype.getSummary = function() {
-    return `${this.title} was written by ${this.author} in ${this.year} `
+    return `${this.title} was written by ${this.author} in ${this.year}`
 } 
 
 
