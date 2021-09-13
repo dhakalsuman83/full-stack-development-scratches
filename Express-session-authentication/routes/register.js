@@ -27,7 +27,7 @@ router.post('/', (req, res) => {
 
                 //hashing the password using the bcryptjs
                 var salt = bcrypt.genSaltSync(10);
-                var hash = bcrypt.hashSync(emailTrim, salt);
+                var hash = bcrypt.hashSync(password, salt);
 
                 //storing the data in the database
                 db.none("INSERT INTO users (surname, firstname, email, password) VALUES ($1,$2,$3,$4);",
