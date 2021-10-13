@@ -1,6 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
+const usersRouter = require("./routes/users");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -9,6 +10,9 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
+
+//Route middleware
+app.use("/api/v1/users", usersRouter);
 
 mongoose
   .connect(process.env.MONGODB_URI)

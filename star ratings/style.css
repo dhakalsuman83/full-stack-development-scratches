@@ -1,0 +1,79 @@
+.rating-container{
+  text-align: center;
+  width:30%;
+  margin:0 auto;
+  /* border:1px solid black; */
+  align-self: center;
+  
+ 
+}
+
+.stars{
+  list-style: none;
+  display:flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* background-color: yellowgreen; */
+}
+
+/* .stars:hover li a i{
+  color: yellowgreen;
+
+} */
+
+ol{
+  width:100%;
+  padding-left: 0;
+}
+
+.stars li a i{
+  font-size: 40px;
+  color: gray;
+  /* align-items: center; */
+  
+}
+
+.stars li a i:hover{
+  color:yellowgreen;
+}
+
+
+.starss.yellowgreen i{
+  color:yellowgreen;
+}
+
+.starss.gray i{
+  color:gray;
+}
+
+.info{
+  font-size:24px;
+ text-align: center;
+ color:green;
+ margin-top:20px;
+ margin-bottom:20px;
+}
+
+.star-btn{
+  display: block;
+  width:50%;
+  margin:10px auto;
+  cursor: pointer;;
+  padding:10px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 3px gray;
+  transition: 0.5s ease-in-out;
+  
+}
+.star-btn:hover{
+  background: green;
+  color: white;
+}
+
+
+
+
+
+
+
+
